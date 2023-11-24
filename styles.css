@@ -103,8 +103,6 @@ textarea:not([rows]) {
 
 html {
   font-size: 0.93rem;
-  background-color: var(--white);
-  min-height: 100vh;
   font-family: "League Spartan";
 }
 
@@ -149,6 +147,11 @@ html {
 
 /* COLOURS ............................................................................................... */
 
+body {
+  background-image: url(images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+}
+
 .wrapper {
   text-align: center;
   margin: 80px 20px;
@@ -185,6 +188,17 @@ html {
   border-radius: 8px;
 }
 
+.testimonial_subcontainer_1 {
+  align-self: flex-start;
+}
+.testimonial_subcontainer_2 {
+  align-self: center;
+}
+
+.testimonial_subcontainer_3 {
+  align-self: flex-end;
+}
+
 .name_verified h3,
 .name_verified p {
   margin: 0;
@@ -203,53 +217,71 @@ html {
   object-fit: cover;
 }
 
-@media (min-width: 90rem) {
-  .wrapper {
-    text-align: left;
-    margin: 80px 200px;
-  }
-  .testimonials_container_main {
-    flex-direction: row;
-    height: 250px;
-    column-gap: 20px;
-  }
-
-  .testimonial_subcontainer_1 {
-    align-self: flex-start;
-  }
-  .testimonial_subcontainer_2 {
-    align-self: center;
-  }
-
-  .testimonial_subcontainer_3 {
-    align-self: flex-end;
-  }
-
+@media (min-width: 700px) {
   .container_maintext_stars {
     display: flex;
   }
 
   .h1_p_container {
     flex: 0 1 50%;
-    align-self: flex-start;
   }
 
   .review_container_main {
     flex: 0 1 50%;
   }
 
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+  }
+
   .h1_p_container {
     padding-right: 80px;
+  }
+
+  .review_container_main {
+    display: flex;
+    width: 400px;
   }
 
   .review_subcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem 2rem 0.5rem 1.8rem;
+  }
+
+  .review_subcontainer_1 {
+    align-self: flex-start;
+  }
+
+  .review_subcontainer_2 {
+    align-self: center;
+  }
+
+  .review_subcontainer_3 {
+    align-self: flex-end;
   }
 
   .review_subcontainer h3 {
-    margin-block-end: 0;
-    margin-block-start: 0;
+    margin-bottom: 13px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h1_main {
+    font-size: 3.8rem;
+  }
+
+  .testimonials_container_main {
+    flex-direction: row;
+    height: 250px;
+    column-gap: 20px;
+  }
+
+  .wrapper {
+    text-align: left;
+    margin: 80px 200px;
   }
 }
