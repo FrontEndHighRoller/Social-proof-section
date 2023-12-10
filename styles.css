@@ -224,7 +224,7 @@ body {
 
 @media (min-width: 62.5rem) {
   .testimonials_container_main {
-    column-gap: 1rem;
+    column-gap: 1.7rem;
     row-gap: 0;
     flex-direction: row;
     justify-content: space-between;
@@ -249,7 +249,7 @@ body {
   }
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 1400px) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg);
     background-repeat: no-repeat;
@@ -261,10 +261,6 @@ body {
 
   .h1_main {
     font-size: 3.8rem;
-  }
-
-  .testimonial_subcontainer {
-    max-width: 20rem;
   }
 
   .h1_p_container {
