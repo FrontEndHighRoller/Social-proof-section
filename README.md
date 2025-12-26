@@ -57,15 +57,18 @@
 2. Open index.html in your browser
 3. Resize the screen to see the responsive layout in action 🎯
 
+---
+
 🏆 Challenge Credit
 Challenge by Frontend Mentor
 https://www.frontendmentor.io
 
+---
+
 🙋‍♂️ Author
-Your Name
+Dennis Rumanek
 
 GitHub: https://github.com/FrontEndHighRoller
-
 LinkedIn: https://www.linkedin.com/in/dennis-rumanek/
 
 ⭐ If you like this solution, feel free to star the repository!
